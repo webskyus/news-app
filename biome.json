@@ -22,15 +22,16 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
-			"nursery": {
-				"noUnusedImports": "error"
+			"correctness": {
+				"noUnusedImports": "error",
+				"noUnusedVariables": "error"
 			}
 		}
 	},
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "single",
-			"trailingComma": "es5",
+			"trailingCommas": "es5",
 			"bracketSpacing": true,
 			"arrowParentheses": "asNeeded",
 			"bracketSameLine": true,
