@@ -28,15 +28,17 @@ Here's the updated **Project Structure** based on a typical FSD (Full-Stack Deve
         ├── /entities       # Entities — business entities like user, product, etc.
         │
         ├── /shared         # Shared functionality, reusable across the project
-        │
-        └── /styles         # Global and module-specific styles
 ```
 
 ### Methods for Running the Project
 
-| Method            | Command      |
-|-----------------|--------------|
-| Development (Dev) | `npm run dev` |
-|                 | `yarn dev`    |
-|                 | `pnpm dev`    |
-|                 | `bun dev`     |
+| Method            | Command           |
+|-------------------|-------------------|
+| Install           | `npm run install` |
+|                   | `yarn add`        |
+|                   | `pnpm install`        |
+|                   | `bun install`         |
+| Development (Dev) | `npm run dev`     |
+|                   | `yarn dev`        |
+|                   | `pnpm dev`        |
+|                   | `bun dev`         |
