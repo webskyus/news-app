@@ -22,7 +22,7 @@ const Profile = () => {
 		<article className={'flex items-center '}>
 			<DropdownMenu>
 				<DropdownMenuTrigger asChild>
-					<Button className={'py-[23px]'} variant='outline'>
+					<Button className={'py-[23px] text-H5'} variant='outline'>
 						<Avatar className={'rounded-2'}>
 							<AvatarImage
 								src='https://github.com/shadcn.png'
