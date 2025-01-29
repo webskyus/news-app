@@ -24,7 +24,7 @@ const WeatherInfo = dynamic(() => import('@widgets/weather-info'), {
 
 const Home = () => {
 	return (
-		<main>
+		<main className={'overflow-x-hidden'}>
 			<Header />
 			<Tags />
 			<HighlightPosts />
