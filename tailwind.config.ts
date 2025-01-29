@@ -41,7 +41,7 @@ export default {
   			black10: '#3e3232',
   			black25: '#3e3232',
   			black50: '#3e3232',
-  			black75: '#3E3232',
+  			black75: 'rgba(62, 50, 50, 0.75)',
 
   			white: '#ffffff',
   			white5: '#ffffff',
@@ -98,7 +98,24 @@ export default {
   			xl: '1.25rem',
   			'2xl': '1.5625rem',
   			'3xl': '1.9375rem',
-  			'4xl': '2.25rem'
+  			'4xl': '2.25rem',
+
+			H1: '36px',
+			H2: '31px',
+			H3: '25px',
+			H4: '20px',
+			H5: '16px',
+			H6: '13px',
+
+			inputText: '12px',
+			paragraph: ['14px', '20px'],
+			largeParagraph: ['18px', '34px'],
+			button: ['14px', '20px'],
+			overline: ['10px', '16px'],
+			body: ['16px', '24px'],
+			body2: ['14px', '20px'],
+			subTitle: ['16px', '24px'],
+			subTitle2: ['14px', '24px']
   		},
   		fontFamily: {
   			roboto: [
