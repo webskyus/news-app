@@ -26,7 +26,7 @@ const Tags = () => {
 	}, [api]);
 
 	return (
-		<aside>
+		<aside className={'mb-[24px]'}>
 			<div className={'container mx-auto'}>
 				<div className={'px-[12px] py-[12px] rounded-1 bg-gray'}>
 					<Carousel

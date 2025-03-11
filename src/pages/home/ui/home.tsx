@@ -28,14 +28,14 @@ const Home = () => {
 			<Header />
 			<Tags />
 			<HighlightPosts />
-			<PopularPosts />
-			<FootballCalendar />
-			<NewPosts />
-			<LatestVideos />
-			<TrendyPosts />
-			<WeatherInfo />
-			<TopPosts />
-			<Footer />
+			{/*<PopularPosts />*/}
+			{/*<FootballCalendar />*/}
+			{/*<NewPosts />*/}
+			{/*<LatestVideos />*/}
+			{/*<TrendyPosts />*/}
+			{/*<WeatherInfo />*/}
+			{/*<TopPosts />*/}
+			{/*<Footer />*/}
 		</main>
 	);
 };

@@ -1,4 +1,4 @@
-import React, {FC, ReactElement} from 'react';
+import React, { FC, ReactElement } from 'react';
 import { PostCard } from '@entities/post/ui/components/post-card';
 import { PostCardHighlight } from '@entities/post/ui/components/post-card-highlight';
 import { PostCardHighlightVideo } from '@entities/post/ui/components/post-card-highlight-video';
@@ -13,14 +13,17 @@ export enum POST_CARD_TEMPLATE {
 }
 
 interface Props {
-    template: keyof typeof POST_CARD_TEMPLATE;
-    meta: boolean;
+	template: keyof typeof POST_CARD_TEMPLATE;
+	meta: boolean;
+	slides: string[];
 }
 
-const Post: FC<Props> = ({ template, meta }) => {
+const Post: FC<Props> = ({ template, meta, slides }) => {
 	const postCardTemplate = {
 		[POST_CARD_TEMPLATE.DEFAULT]: <PostCard />,
-		[POST_CARD_TEMPLATE.POST_CARD_HIGHLIGHT]: <PostCardHighlight />,
+		[POST_CARD_TEMPLATE.POST_CARD_HIGHLIGHT]: (
+			<PostCardHighlight slides={slides} />
+		),
 		[POST_CARD_TEMPLATE.POST_CARD_HIGHLIGHT_VIDEO]: <PostCardHighlightVideo />,
 		[POST_CARD_TEMPLATE.POST_CARD_HORIZONTAL]: <PostCardHorizontal />,
 	} as Record<keyof typeof POST_CARD_TEMPLATE, ReactElement>;
